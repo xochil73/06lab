@@ -2,15 +2,21 @@
   "departments": [
     {
       "name": "Hair",
-      "_id": 3
+      "_id": 1,
+      "display_name": "HAIR SERVICES",
+      "description": "Services for hair"
     },
     {
       "name": "Spa",
-      "_id": 4
+      "_id": 4,
+      "display_name": "SPA SERVICES",
+      "description": "Services in the Spa"
     },
     {
       "name": "Nails",
-      "_id": 5
+      "_id": 5,
+      "display_name": "NAIL SERVICES",
+      "description": "Services for the Nails"
     }
 
   ],
@@ -19,19 +25,22 @@
       "_id": 1,
       "category": "Haircut",
       "name": "Women",
-      "price": 60.00
+      "display_name": "Women's Haircut",
+      "description": "Wash, cut and style for women"
     },
     {
       "_id": 2,
       "category": "Massage",
       "name": "Hour Swedish",
-      "price": 100.00
+      "display_name": "One Hour Swedish Massage",
+      "description": "60 Minutes deep-tissue Swedish massage to relax you muscles and mind"
     },
     {
       "_id": 3,
       "category": "Nails",
       "name": "Pedicure",
-      "price": 80.00
+      "display_name": "Classic Pedicure",
+      "description": "Soak, nail care, foot massage and polish or buff"
     }
   ]
 }
