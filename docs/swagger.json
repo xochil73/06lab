@@ -1,38 +1,38 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "",
+    "description": "A Simple APi - using Spa Services as an Example",
     "version": "1.0.0",
-    "title": ""
+    "title": "Lab 06 - Simple API"
   },
   "paths": {
-    "": {
+    "/services": {
       "get": {
-        "description": "",
+        "description": "Get all services",
         "responses": {
           "200": {
-            "description": "",
+            "description": "Return service listings",
             "schema": {
-              "$ref": ""
+              "$ref": "#/definitions/getAll"
             }
           }
         }
       }
     },
-    "": {
+    "/service/{id}": {
       "parameters": [
         {
-          "in": "",
-          "name": "",
-          "required": ,
-          "type": ""
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "type": "integer"
         }
       ],
-      "": {
-        "description": "",
+      "get": {
+        "description": "Get selected service",
         "responses": {
           "200": {
-            "description": "",
+            "description": "Return service",
             "schema": {
               "$ref": "#/definitions/getOne"
             }
@@ -49,8 +49,14 @@
         "properties": {}
       },
       "example": [
-        {"name": "Category 1", "id": 1},
-        {"name": "Category 2", "id": 2}
+        {
+          "name": "Women",
+          "id": 1
+        },
+        {
+          "name": "Houe Swedish",
+          "id": 2
+        }
       ]
     },
     "getOne": {
@@ -59,8 +65,15 @@
         "type": "object",
         "properties": {}
       },
-      "example": {"name": "Category Name", "id": 1}
+      "example": {
+        "name": "Women",
+        "id": 1
+      }
     }
   },
   "host": "localhost:3000",
   "basePath": "/",
+  "schemes": [
+    "http"
+  ]
+}
