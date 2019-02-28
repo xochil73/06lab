@@ -1,0 +1,37 @@
+{
+  "departments": [
+    {
+      "name": "Hair",
+      "_id": 3
+    },
+    {
+      "name": "Spa",
+      "_id": 4
+    },
+    {
+      "name": "Nails",
+      "_id": 5
+    }
+
+  ],
+  "services": [
+    {
+      "_id": 1,
+      "category": "Haircut",
+      "name": "Women",
+      "price": 60.00
+    },
+    {
+      "_id": 2,
+      "category": "Massage",
+      "name": "Hour Swedish",
+      "price": 100.00
+    },
+    {
+      "_id": 3,
+      "category": "Nails",
+      "name": "Pedicure",
+      "price": 80.00
+    }
+  ]
+}
